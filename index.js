@@ -69,5 +69,11 @@ function render () {
         localStorage.setItem("todos", JSON.stringify(todoList));
     });
 
+    item.appendChild(checkbox);
+    item.appendChild(text);
+    item.appendChild(button);
+    todo.appendChild(item);
+    input.value = null;
+
 } //end function render()
 
